@@ -1,11 +1,10 @@
 import "./style.css";
 import {renderPageGarage} from './modules/render-page';
+import {pageGarage} from './modules/render-page'
 // import {btnCar1} from './modules/animation'
 
 
-renderPageGarage();
-const btnCar1 = <HTMLButtonElement>document.getElementById('btnStart1');
-btnCar1?.addEventListener('click', () => console.log('wou'));
+renderPageGarage(pageGarage);
 // import { n } from "./modules/render-page";
 // createBtn.innerText = 'Garage';
 // createBtn.disabled = true;
@@ -29,7 +28,7 @@ btnCar1?.addEventListener('click', () => console.log('wou'));
 // n++;
 // }
 
-// fetch('http://127.0.0.1:3000/garage/id=3', {
+// fetch('http://127.0.0.1:3000/garage/2', {
 //     method: 'DELETE',
 
 // })
@@ -46,4 +45,3 @@ btnCar1?.addEventListener('click', () => console.log('wou'));
 // document.body.innerHTML = '<input type="color" id="body" name="body"value="#f6b73c">'
 // const rgb = <HTMLInputElement>document.getElementById('body');
 // rgb.addEventListener('input', () => console.log(rgb.value))
-;
